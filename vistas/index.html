@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asado y Fuego</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Asado y Fuego</h1>
+    </header>
+
+    <div class="contenedor">
+        <main>
+            <section id="inicio">
+                <h2>Bienvenidos a Asado y Fuego</h2>
+                <p>¡Disfruta de la mejor parrillada en un ambiente acogedor y familiar!</p>
+            </section>
+
+            <section id="menu">
+                <h2>Nuestro Menú</h2>
+                <table>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                    <tr>
+                        <td>Choripán</td>
+                        <td>Delicioso chorizo argentino en pan recién horneado.</td>
+                        <td>$8.99</td>
+                        <td><img src="../imagenes/choripan.jpg" alt="Choripán"></td>
+                    </tr>
+                    <tr>
+                        <td>Asado Criollo</td>
+                        <td>Selección de las mejores carnes asadas a la parrilla.</td>
+                        <td>$20.99</td>
+                        <td><img src="../imagenes/asado.jpg" alt="Asado Criollo"></td>
+                    </tr>
+                    <!-- Nuevos platos -->
+                    <tr>
+                        <td>Bife de Chorizo</td>
+                        <td>Jugoso corte de carne de res, perfectamente asado.</td>
+                        <td>$25.99</td>
+                        <td><img src="../imagenes/bife.jpg" alt="Bife de Chorizo"></td>
+                    </tr>
+                    <tr>
+                        <td>Mollejas a la Parrilla</td>
+                        <td>Delicadas mollejas de cerdo asadas al fuego.</td>
+                        <td>$18.99</td>
+                        <td><img src="../imagenes/mollejas.webp" alt="Mollejas a la Parrilla"></td>
+                    </tr>
+                    <tr>
+                        <td>Entraña al Chimichurri</td>
+                        <td>Entraña de vacuno marinada en chimichurri casero.</td>
+                        <td>$22.99</td>
+                        <td><img src="../imagenes/entraña.jpg" alt="Entraña al Chimichurri"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>¡Estamos esperando tu visita!</p>
+                <p>Puedes encontrarnos en:</p>
+                <address>
+                    Av. Parrillada, 123<br>
+                    Ciudad del Fuego<br>
+                    Teléfono: 555-123-4567<br>
+                    Correo electrónico: info@asadoyfuego.com
+                </address>
+            </section>
+
+            <section id="agregar-pedido">
+                <h2>Agregar Pedido</h2>
+                <form action="procesar-pedido.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+
+                    <label for="email">Correo electrónico:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="pedido">Pedido:</label>
+                    <br>
+                    <textarea id="pedido" name="pedido" rows="5" cols="30" required></textarea>
+                    <br><br>
+
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Asado y Fuego</p>
+    </footer>
+
+</body>
+</html>
